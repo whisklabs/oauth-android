@@ -156,6 +156,9 @@ public class OAuthDialog extends Dialog {
 	     				mdata.expires_in = data.getString("expires_in");
 	     			if (data.has("request"))
 	     				mdata.request = data.getJSONObject("request");
+            // server-side flow
+            if (data.has("code"))
+              mdata.code = data.getString("code");
 	     		}
 	     		if (mdata.status.contains("error"))
 	     		{

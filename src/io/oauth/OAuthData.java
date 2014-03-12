@@ -22,6 +22,7 @@ public class OAuthData {
 	public String expires_in;	/** if the token expires */
 	public String error;		/** error encountered */
 	public JSONObject request;	/** API request description */
+	public String code;		      /** access_code for server-side flow */
 	
 	public OAuthData(OAuth o)
 	{
